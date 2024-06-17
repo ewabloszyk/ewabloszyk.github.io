@@ -14,7 +14,7 @@ body {
 }
 
 #page-wraper {
-    background: #F0D38C no-repeat center center fixed;
+    background: #FFFCE9 no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -45,7 +45,7 @@ a:hover {
 p {
 	letter-spacing: 0.5px;
     line-height: 2em;
-    color: black;
+    color: #513E0F;
 }
 
 h4 {
@@ -133,8 +133,8 @@ html {
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: #FFFCE9;
-    color: #1D7400;
+    background: #4CBB17;
+    color: #fff;
 }
 
 /* Sidebar Menu */
@@ -313,20 +313,20 @@ html {
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    color: black;
+    color: #F0D38C;
 }
 
 .section-heading .line-dec {
     max-width: 500px;
     height: 3px;
-    background-color: #1D7400;
+    background-color: #F0D38C;
     margin: 20px 0;
 }
 
 .section-heading span {
     margin-top: 5px;
     font-size: 14px;
-    color: black;
+    color: #F0D38C;
     letter-spacing: 1px;
 }
 
@@ -676,7 +676,7 @@ section.contact-me {
     }
 
     .section {
-        color: black;
+        color: #513E0F;
         width: 65%;
         right: 5%;
         left: 30%;
