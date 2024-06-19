@@ -33,12 +33,12 @@ textarea {
 }
 
 a {
-	color: #9FF;
+	color: #4CBB17;
     text-decoration: none;
 }
 
 a:hover {
-	color: #FF0;
+	color: #94D513;
 	text-decoration: none;
 }
 
@@ -326,7 +326,7 @@ html {
 .section-heading span {
     margin-top: 5px;
     font-size: 14px;
-    color: #F0D38C;
+    color: #513E0F;
     letter-spacing: 1px;
 }
 
@@ -524,6 +524,10 @@ button:hover {
 .lazyloading {
     background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
     min-height: 60px;
+}
+
+.recommendations {
+    color: #513E0F
 }
 
 figure.snip1321 {
