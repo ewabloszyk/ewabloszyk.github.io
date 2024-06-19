@@ -125,7 +125,7 @@ html {
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    color: #fff;
+    color: #FFFCE9;
     width: 100%;
     transition: all 0.5s;
     border-top: 1px solid #4CBB17;
@@ -133,8 +133,8 @@ html {
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: #4CBB17;
-    color: #fff;
+    background: #94D513;
+    color: #1D7400;
 }
 
 /* Sidebar Menu */
@@ -313,13 +313,13 @@ html {
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #F0D38C;
+    color: #1D7400;
 }
 
 .section-heading .line-dec {
     max-width: 500px;
     height: 3px;
-    background-color: #F0D38C;
+    background-color: #94D513;
     margin: 20px 0;
 }
 
