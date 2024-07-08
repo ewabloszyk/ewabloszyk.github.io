@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-	color: #94D513;
+	color: #6A6EE3;
 	text-decoration: none;
 }
 
@@ -132,7 +132,7 @@ html {
     color: #FFF8F6;
     width: 100%;
     transition: all 0.5s;
-    border-top: 1px solid #4630B4;
+    border-top: 1px solid #878AE8;
 }
 
 .main-nav li:hover a,
@@ -191,7 +191,7 @@ html {
 
 .menu .social-network ul li a:hover {
     background-color: #fff;
-    color: #1D7400;
+    color: #6A6EE3;
 }
 
 .menu .copyright-text {
@@ -268,7 +268,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    color: #1D7400;
+    color: #6A6EE3;
     background-color: #fff;
     width: 66px;
     height: 66px;
@@ -285,7 +285,7 @@ html {
 #menu-close {
     cursor: pointer;
     text-align: right;
-    color: #1D7400;
+    color: #6A6EE3;
     background-color: #fff;
     width: 100%;
     height: 66px;
@@ -340,7 +340,7 @@ html {
     display: inline-block;
     padding: 12px 22px;
     background-color: #fff;
-    color: #1D7400;
+    color: #6A6EE3;
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -349,7 +349,7 @@ html {
 }
 
 .white-button a:hover {
-    background-color: #1D7400;
+    background-color: #6A6EE3;
     color: #fff;
 }
 
@@ -357,7 +357,7 @@ button {
     display: inline-block;
     padding: 12px 22px;
     background-color: #fff;
-    color: #1D7400;
+    color: #6A6EE3;
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -370,7 +370,7 @@ button {
 
 button:hover {
     outline: none;
-    background-color: #1D7400;
+    background-color: #6A6EE3;
     color: #fff;
 }
 
@@ -484,8 +484,8 @@ button:hover {
 }
 
 .isotope-toolbar input[type="radio"]:checked + span {
-    color: #1D7400;
-    border-bottom: 2px solid #1D7400;
+    color: #6A6EE3;
+    border-bottom: 2px solid #6A6EE3;
 }
 
 .isotope-box {
@@ -573,7 +573,7 @@ figure.snip1321 span {
 figure.snip1321 i {
   position: relative!important;
   font-size: 18px;
-  background-color: #1D7400;
+  background-color: #6A6EE3;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -831,7 +831,7 @@ clear: both;
 }
 
 button.custom {
-    background-color: #94D513 !important;
+    background-color: #6A6EE3 !important;
     border: none !important;
     border-radius: 4px !important;
     box-shadow: none !important;
