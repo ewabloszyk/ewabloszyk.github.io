@@ -900,7 +900,7 @@ body {
   opacity: 1;
 }
 .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
-  background: #ccc;
+  background: #6a6ee3;
   cursor: default;
   pointer-events: none;
 }
@@ -908,7 +908,7 @@ body {
   opacity: 1;
 }
 .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
-  background: #ccc;
+  background: #6a6ee3;
   cursor: default;
   pointer-events: none;
 }
@@ -916,7 +916,7 @@ body {
   opacity: 1;
 }
 .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
-  background: #ccc;
+  background: #6a6ee3;
   cursor: default;
   pointer-events: none;
 }
@@ -924,7 +924,7 @@ body {
   opacity: 1;
 }
 .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
-  background: #ccc;
+  background: #6a6ee3;
   cursor: default;
   pointer-events: none;
 }
@@ -932,7 +932,15 @@ body {
   opacity: 1;
 }
 .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
-  background: #ccc;
+  background: #6a6ee3;
+  cursor: default;
+  pointer-events: none;
+}
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(5) {
+  opacity: 1;
+}
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(5) {
+  background: #6a6ee3;
   cursor: default;
   pointer-events: none;
 }
@@ -1015,7 +1023,7 @@ body {
   z-index: 3;
 }
 .carousel__nav > label {
-  border: 1px solid #fff;
+  border: 1px solid #4630b4;
   display: inline-block;
   border-radius: 50%;
   cursor: pointer;
