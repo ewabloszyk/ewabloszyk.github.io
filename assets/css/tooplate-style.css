@@ -14,7 +14,7 @@ body {
 }
 
 #page-wraper {
-    background: #FFFCE9 no-repeat center center fixed;
+    background: #FFF8F6 no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,7 +33,7 @@ textarea {
 }
 
 a {
-	color: #4CBB17;
+	color: #4630B4;
     text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ a:hover {
 p {
 	letter-spacing: 0.5px;
     line-height: 2em;
-    color: #513E0F;
+    color: #1F1A38;
 }
 
 h4 {
@@ -116,7 +116,7 @@ html {
 }
 
 .main-nav li:last-child a {
-    border-bottom: 1px solid #4CBB17;
+    border-bottom: 1px solid 1F1A38;
 }
 
 .main-nav li {
@@ -129,16 +129,16 @@ html {
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    color: #FFFCE9;
+    color: #FFF8F6;
     width: 100%;
     transition: all 0.5s;
-    border-top: 1px solid #4CBB17;
+    border-top: 1px solid #4630B4;
 }
 
 .main-nav li:hover a,
 .main-nav li.active a {
-    background: #94D513;
-    color: #1D7400;
+    background: #4630B4;
+    color: #FFF8F6;
 }
 
 /* Sidebar Menu */
@@ -236,7 +236,7 @@ html {
     left: 8%;
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
-  background-color: #1D7400;
+  background-color: #6A6EE3;
   box-sizing: border-box;
   height: 100vh;  
   max-height: 100vh !important;
@@ -317,20 +317,20 @@ html {
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #1D7400;
+    color: #6A6EE3;
 }
 
 .section-heading .line-dec {
     max-width: 500px;
     height: 3px;
-    background-color: #94D513;
+    background-color: #4630B4;
     margin: 20px 0;
 }
 
 .section-heading span {
     margin-top: 5px;
     font-size: 14px;
-    color: #513E0F;
+    color: #1F1A38;
     letter-spacing: 1px;
 }
 
@@ -531,7 +531,7 @@ button:hover {
 }
 
 .recommendations {
-    color: #513E0F
+    color: #1F1A38
 }
 
 figure.snip1321 {
@@ -684,7 +684,7 @@ section.contact-me {
     }
 
     .section {
-        color: #513E0F;
+        color: #1F1A38;
         width: 65%;
         right: 5%;
         left: 30%;
