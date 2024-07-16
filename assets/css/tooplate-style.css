@@ -852,9 +852,31 @@ img.mastermind {
     border-radius: 50%;
 }
 
+img.o_mnie {
+    max-width: 40%;
+    min-width: 300px;
+    float: left;
+    /* width: 100%; */
+    overflow: hidden;
+    margin-bottom: 30px;
+	margin-right: 30px;
+}
 
-
-
+body {
+  background: #fcfcfc;
+  margin: 0;
+}
+.Mastermind.container {
+  width: 900px;
+  min-width: 900px;
+  margin: 50px auto;
+}
+ul.center-text {
+  margin-top: 0px;
+}
+.odd {
+	background: white;
+}
 
 
 /**
@@ -873,15 +895,7 @@ img.mastermind {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-body {
-  background: #fcfcfc;
-  margin: 0;
-}
-.Mastermind.container {
-  width: 900px;
-  min-width: 900px;
-  margin: 50px auto;
-}
+
 .carousel {
   width: 100%;
   position: relative;
@@ -936,10 +950,10 @@ body {
   cursor: default;
   pointer-events: none;
 }
-.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(5) {
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) {
   opacity: 1;
 }
-.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(5) {
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
   background: #6a6ee3;
   cursor: default;
   pointer-events: none;
@@ -1031,3 +1045,4 @@ body {
   width: 20px;
   height: 20px;
 }
+
