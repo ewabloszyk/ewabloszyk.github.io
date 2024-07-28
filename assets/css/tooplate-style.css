@@ -910,6 +910,19 @@ ul.center-text {
   position: relative;
   overflow: hidden;
 }
+
+
+.service-item:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  font-size: 300px;
+  color: #6a6ee3;
+  top: 0%;
+  right:10%;
+  content: "\f10e";
+  opacity: 10%;
+}
+
 .carousel > input[type="radio"] {
   position: absolute;
   left: 0;
