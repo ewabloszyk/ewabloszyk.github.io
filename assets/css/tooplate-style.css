@@ -846,7 +846,7 @@ section.Biznes {
 min-height: 64vh;
 }
 
-section.Mastermind {
+section.my-mission {
 clear: both;
 }
 
@@ -860,9 +860,10 @@ button.custom {
     padding: 15px !important;
     box-sizing: border-box !important;
     margin-top: 30px;
+	margin-bottom: 60px;
 }
 
-img.mastermind {
+img.Oferta {
     max-width: 40%;
     min-width: 300px;
     float: right;
@@ -888,7 +889,7 @@ body {
   background: #fcfcfc;
   margin: 0;
 }
-.Mastermind.container {
+.Oferta.container {
   width: 900px;
   min-width: 900px;
   margin: 50px auto;
@@ -1082,5 +1083,8 @@ ul.center-text {
   margin: 0 0.125%;
   width: 20px;
   height: 20px;
+}
+p .oferta-button {
+	margin-bottom 60px;
 }
 
