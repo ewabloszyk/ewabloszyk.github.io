@@ -8,6 +8,11 @@ https://www.tooplate.com/view/2116-blugoon
 
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
+
+/* custom mod start */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* custom mod end */
+
 body {
     font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
@@ -159,8 +164,11 @@ html {
 }
 
 .menu .author-content h4 {
-    margin-bottom: 0px;
-	text-transform: uppercase;
+    margin-bottom: 0px;	
+	/* custom mod start */
+	/* text-transform: uppercase; */
+    font-size: 16px;	
+	/* custom mod end */
 }
 
 .menu .author-content span {
@@ -824,6 +832,14 @@ section.contact-me {
     float: left;
     min-width: 300px;
     margin-bottom: 30px;
+}
+
+.Biznes .section-heading .center-text h1, h3 {
+	font-family: "PT Sans";
+}
+
+.Biznes .section-heading .center-text h1, h3 {
+	font-family: "PT Sans";
 }
 
 section.Biznes {
