@@ -48,8 +48,8 @@ a:hover {
 }
 
 p {
-	letter-spacing: 0.5px;
-    line-height: 2em;
+    letter-spacing: 0.6px;
+    line-height: 1.5em;
     color: #1F1A38;
 }
 
@@ -846,9 +846,18 @@ section.Biznes {
 min-height: 64vh;
 }
 
-section.my-mission {
+section.profil-konsultantki {
 clear: both;
+text-align: justify;
+max-width: 530px;
 }
+
+section.Specjalizacja div.container {
+float: right;
+text-align: justify;
+max-width: 530px;
+}
+
 
 button.custom {
     background-color: #6A6EE3 !important;
@@ -888,6 +897,10 @@ img.o_mnie {
 body {
   background: #fcfcfc;
   margin: 0;
+    letter-spacing: 0.6px;
+    line-height: 1.5em;
+    color: #1F1A38;
+    font-size: 1.3rem;
 }
 .Oferta.container {
   width: 900px;
