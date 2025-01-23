@@ -146,6 +146,41 @@ html {
     color: #FFF8F6;
 }
 
+
+/* Start custom clas for menu to avoid java scroll */
+.m-nav {
+    text-align: center;
+}
+
+.m-nav li:last-child a {
+    border-bottom: 1px solid 1F1A38;
+}
+
+.m-nav li {
+    display: block;
+}
+
+.m-nav li a {
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF8F6;
+    width: 100%;
+    transition: all 0.5s;
+    border-top: 1px solid #878AE8;
+}
+
+.m-nav li:hover a,
+.m-nav li.active a {
+    background: #4630B4;
+    color: #FFF8F6;
+}
+/* Stop custom clas for menu to avoid java scroll */
+
+
+
 /* Sidebar Menu */
 
 .menu .image {
