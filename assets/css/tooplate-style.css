@@ -867,6 +867,7 @@ section.contact-me {
     float: left;
     min-width: 300px;
     margin-bottom: 30px;
+    border-radius: 50%;
 }
 
 .Biznes .section-heading .center-text h1, h3 {
@@ -884,13 +885,13 @@ min-height: 64vh;
 section.profil-konsultantki {
 clear: both;
 text-align: justify;
-max-width: 530px;
+max-width: 550px;
 }
 
 section.Specjalizacja div.container {
 float: right;
 text-align: justify;
-max-width: 530px;
+max-width: 550px;
 }
 
 
