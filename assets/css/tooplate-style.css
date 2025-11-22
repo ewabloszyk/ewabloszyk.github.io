@@ -1039,6 +1039,31 @@ ul.center-text {
   pointer-events: none;
 }
 
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) {
+    opacity: 1;
+  }
+  .carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
+    background: #6a6ee3;
+    cursor: default;
+    pointer-events: none;
+  }
+  .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(7) {
+    opacity: 1;
+  }
+  .carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
+    background: #6a6ee3;
+    cursor: default;
+    pointer-events: none;
+  }
+  .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__items .carousel__item:nth-child(8) {
+    opacity: 1;
+  }
+  .carousel > input[type="radio"]:nth-child(8):checked ~ .carousel__nav > label:nth-child(8) {
+    background: #6a6ee3;
+    cursor: default;
+    pointer-events: none;
+  }
+
 .carousel__items {
   margin: 0;
   padding: 0;
