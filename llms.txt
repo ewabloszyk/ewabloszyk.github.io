@@ -1,0 +1,40 @@
+# Ewa Bloszyk Balansy
+
+> Hugo & Tailwindcss Starter
+
+## Pages
+- [Home](https://ewabloszyk.pl/index.md)
+- [Kontakt](https://ewabloszyk.pl/contact/index.md): this is meta description
+- [O mnie](https://ewabloszyk.pl/about/index.md): this is meta description
+
+## Blog Posts
+- [Blog Posts](https://ewabloszyk.pl/blog/index.md): this is meta description
+
+- [post testowy](https://ewabloszyk.pl/blog/post-testowy/index.md): post testowy
+
+- [How to build an Application with modern Technology](https://ewabloszyk.pl/blog/post-1/index.md): this is meta description
+- [How to build an Application with modern Technology](https://ewabloszyk.pl/blog/post-2/index.md): this is meta description
+- [How to build an Application with modern Technology](https://ewabloszyk.pl/blog/post-3/index.md): this is meta description
+- [How to build an Application with modern Technology](https://ewabloszyk.pl/blog/post-4/index.md): this is meta description
+
+## Pages
+- [Pages](https://ewabloszyk.pl/pages/index.md)
+
+- [Elements](https://ewabloszyk.pl/elements/index.md): This is meta description
+- [Polityka Prywatności](https://ewabloszyk.pl/privacy-policy/index.md): This is meta description
+
+## Categories
+- [Categories](https://ewabloszyk.pl/categories/index.md)
+- [Application](https://ewabloszyk.pl/categories/application/index.md)
+- [Architecture](https://ewabloszyk.pl/categories/architecture/index.md)
+- [Data](https://ewabloszyk.pl/categories/data/index.md)
+- [Software](https://ewabloszyk.pl/categories/software/index.md)
+- [Technology](https://ewabloszyk.pl/categories/technology/index.md)
+
+## Tags
+- [Tags](https://ewabloszyk.pl/tags/index.md)
+- [Nextjs](https://ewabloszyk.pl/tags/nextjs/index.md)
+- [Silicon](https://ewabloszyk.pl/tags/silicon/index.md)
+- [Software](https://ewabloszyk.pl/tags/software/index.md)
+- [Tailwind](https://ewabloszyk.pl/tags/tailwind/index.md)
+- [Technology](https://ewabloszyk.pl/tags/technology/index.md)

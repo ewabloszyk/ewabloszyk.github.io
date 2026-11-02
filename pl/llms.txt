@@ -1,0 +1,12 @@
+# Hugoplate
+
+> Hugo & Tailwindcss Starter
+
+## Pages
+- [Home](//localhost:1313/pl/index.md)
+
+## Categories
+- [Categories](//localhost:1313/pl/categories/index.md)
+
+## Tags
+- [Tags](//localhost:1313/pl/tags/index.md)

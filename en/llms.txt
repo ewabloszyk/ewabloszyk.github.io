@@ -1,0 +1,47 @@
+# Hugoplate
+
+> Hugo & Tailwindcss Starter
+
+## Pages
+- [Home](//localhost:1313/en/index.md)
+- [Contact](//localhost:1313/en/contact/index.md): this is meta description
+- [Hey, I am John Doe!](//localhost:1313/en/about/index.md): this is meta description
+
+## Blog Posts
+- [Blog Posts](//localhost:1313/en/blog/index.md): this is meta description
+
+- [post testowy](//localhost:1313/en/blog/post-testowy/index.md): post testowy
+
+- [How to build an Application with modern Technology](//localhost:1313/en/blog/post-1/index.md): this is meta description
+- [How to build an Application with modern Technology](//localhost:1313/en/blog/post-2/index.md): this is meta description
+- [How to build an Application with modern Technology](//localhost:1313/en/blog/post-3/index.md): this is meta description
+- [How to build an Application with modern Technology](//localhost:1313/en/blog/post-4/index.md): this is meta description
+
+## Authors
+- [Authors](//localhost:1313/en/authors/index.md)
+
+- [John Doe](//localhost:1313/en/authors/john-doe/index.md): this is meta description
+- [Sam Wilson](//localhost:1313/en/authors/sam-wilson/index.md): this is meta description
+- [William Jacob](//localhost:1313/en/authors/william-jacob/index.md): this is meta description
+
+## Pages
+- [Pages](//localhost:1313/en/pages/index.md)
+
+- [Elements](//localhost:1313/en/elements/index.md): This is meta description
+- [Privacy](//localhost:1313/en/privacy-policy/index.md): This is meta description
+
+## Categories
+- [Categories](//localhost:1313/en/categories/index.md)
+- [Application](//localhost:1313/en/categories/application/index.md)
+- [Architecture](//localhost:1313/en/categories/architecture/index.md)
+- [Data](//localhost:1313/en/categories/data/index.md)
+- [Software](//localhost:1313/en/categories/software/index.md)
+- [Technology](//localhost:1313/en/categories/technology/index.md)
+
+## Tags
+- [Tags](//localhost:1313/en/tags/index.md)
+- [Nextjs](//localhost:1313/en/tags/nextjs/index.md)
+- [Silicon](//localhost:1313/en/tags/silicon/index.md)
+- [Software](//localhost:1313/en/tags/software/index.md)
+- [Tailwind](//localhost:1313/en/tags/tailwind/index.md)
+- [Technology](//localhost:1313/en/tags/technology/index.md)

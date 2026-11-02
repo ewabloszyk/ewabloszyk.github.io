@@ -1,0 +1,377 @@
+# 1. Włączenie trybu lokalnego (KLUCZOWE)
+local_backend: true
+
+# 2. Atrapa backendu (wymagana przez CMS, ale local_backend ją nadpisze)
+backend:
+  name: test-repo
+
+# 3. Gdzie mają trafiać wgrywane zdjęcia i obrazki
+media_folder: "static/images" # folder fizyczny w projekcie
+public_folder: "/images"       # ścieżka generowana w HTML przez Hugo
+
+# 4. Definicja Twoich treści (np. sekcja Blog / Posty)
+##collections:
+##  - name: "blog"
+##    label: "Posty na blogu"
+##    folder: "content/english/blog/" # Ścieżka do Twoich plików Markdown w Hugo
+##    create: true # Pozwala dodawać nowe posty z poziomu CMS
+##    slug: "{{slug}}"
+##    fields:
+##      - { label: "Tytuł", name: "title", widget: "string" }
+##      - { label: "Data publikacji", name: "date", widget: "datetime" }
+##      - { label: "Opis", name: "description", widget: "string", required: false }
+##      - { label: "Treść posta", name: "body", widget: "markdown" }
+
+#backend:
+#  name: git-gateway
+#  branch: main # Upewnij się, że to nazwa Twojej głównej gałęzi w Git
+
+
+
+collections:
+  # ==========================================
+  # KOLEKCJA: TREŚĆ STRONY GŁÓWNEJ (ZAWARTOSĆ)
+  # ==========================================
+  - name: "homepage_settings"
+    label: "Strona Główna (Treść)"
+    delete: false
+    files:
+      # --- WERSJA POLSKA (DOMYŚLNA) ---
+      - name: "home_pl"
+        label: "Strona Główna (PL)"
+        file: "content/polish/_index.md"
+        fields:
+          # Sekcja Banner (Hero)
+          - label: "Sekcja Główna (Banner)"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Podtytuł / Opis", name: "content", widget: "text" }
+              - { label: "Zdjęcie bannera", name: "image", widget: "image", required: false }
+              - label: "Przycisk główny (CTA)"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Napis na przycisku", name: "label", widget: "string" }
+                  - { label: "Link (URL)", name: "link", widget: "string" }
+                  - { label: "Włączyć przycisk?", name: "enable", widget: "boolean", default: true }
+
+          # Sekcja Funkcji / Bloków zawartości (Features jako Lista)
+          - label: "Bloki Zawartości (Features)"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Tytuł bloku", name: "title", widget: "string" }
+              - { label: "Zdjęcie", name: "image", widget: "image", required: false }
+              - { label: "Treść / Opis bloku", name: "content", widget: "markdown" }
+              - label: "Lista punktowana (Bulletpoints)"
+                name: "bulletpoints"
+                widget: "list"
+                summary: "{{fields.value}}"
+                field: { label: "Punkt na liście", name: "value", widget: "string" }
+              - label: "Przycisk bloku"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Napis na przycisku", name: "label", widget: "string", required: false }
+                  - { label: "Link (URL)", name: "link", widget: "string", required: false }
+                  - { label: "Włączyć przycisk?", name: "enable", widget: "boolean", default: false }
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "home_en"
+        label: "Strona Główna (EN)"
+        file: "content/english/_index.md"
+        fields:
+          # Sekcja Banner (Hero)
+          - label: "Sekcja Główna (Banner)"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Podtytuł / Opis", name: "content", widget: "text" }
+              - { label: "Zdjęcie bannera", name: "image", widget: "image", required: false }
+              - label: "Przycisk główny (CTA)"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Napis na przycisku", name: "label", widget: "string" }
+                  - { label: "Link (URL)", name: "link", widget: "string" }
+                  - { label: "Włączyć przycisk?", name: "enable", widget: "boolean", default: true }
+
+          # Sekcja Funkcji / Bloków zawartości (Features jako Lista)
+          - label: "Bloki Zawartości (Features)"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Tytuł bloku", name: "title", widget: "string" }
+              - { label: "Zdjęcie", name: "image", widget: "image", required: false }
+              - { label: "Treść / Opis bloku", name: "content", widget: "text" }
+              - label: "Lista punktowana (Bulletpoints)"
+                name: "bulletpoints"
+                widget: "list"
+                summary: "{{fields.value}}"
+                field: { label: "Punkt na liście", name: "value", widget: "string" }
+              - label: "Przycisk bloku"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Napis na przycisku", name: "label", widget: "string", required: false }
+                  - { label: "Link (URL)", name: "link", widget: "string", required: false }
+                  - { label: "Włączyć przycisk?", name: "enable", widget: "boolean", default: false }
+
+  # ==========================================
+  # KOLEKCJA: SEKCJE STRONY GŁÓWNEJ (MODUŁY)
+  # ==========================================
+  - name: "homepage_sections"
+    label: "Sekcje Strony Głównej (Opinie i CTA)"
+    delete: false
+    files:
+      # --- WERSJA POLSKA: OPINIE ---
+      - name: "testimonials_pl"
+        label: "Opinie / Testimonials (PL)"
+        file: "content/polish/sections/testimonial.md"
+        fields:
+          - { label: "Włączyć sekcję opinii?", name: "enable", widget: "boolean", default: true }
+          - { label: "Główny Tytuł Sekcji", name: "title", widget: "string" }
+          - { label: "Opis pod tytułem", name: "description", widget: "text" }
+          - label: "Lista Opinii"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Imię i Nazwisko", name: "name", widget: "string" }
+              - { label: "Stanowisko / Firma", name: "designation", widget: "string", required: false }
+              - { label: "Zdjęcie / Avatar", name: "avatar", widget: "image", required: false }
+              - { label: "Treść opinii", name: "content", widget: "text" }
+
+      # --- WERSJA POLSKA: CALL TO ACTION ---
+      - name: "cta_pl"
+        label: "Wezwanie do Działania / CTA (PL)"
+        file: "content/polish/sections/call-to-action.md" # <-- TERAZ POPRAWNIE WSKAZUJE NA /POLISH/
+        fields:
+          - { label: "Włączyć sekcję CTA?", name: "enable", widget: "boolean", default: true }
+          - { label: "Tytuł sekcji CTA", name: "title", widget: "string" }
+          - { label: "Treść / Opis", name: "content", widget: "text" }
+          - { label: "Zdjęcie", name: "image", widget: "image", required: false }
+          - label: "Przycisk"
+            name: "button"
+            widget: "object"
+            fields:
+              - { label: "Napis na przycisku", name: "label", widget: "string" }
+              - { label: "Link (URL)", name: "link", widget: "string" }
+              - { label: "Włączyć przycisk?", name: "enable", widget: "boolean", default: true }
+
+      # --- WERSJA ANGIELSKA: OPINIE ---
+      - name: "testimonials_en"
+        label: "Opinie / Testimonials (EN)"
+        file: "content/english/sections/testimonial.md"
+        fields:
+          - { label: "Włączyć sekcję opinii?", name: "enable", widget: "boolean", default: true }
+          - { label: "Główny Tytuł Sekcji", name: "title", widget: "string" }
+          - { label: "Opis pod tytułem", name: "description", widget: "text" }
+          - label: "Lista Opinii"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Imię i Nazwisko", name: "name", widget: "string" }
+              - { label: "Stanowisko / Firma", name: "designation", widget: "string", required: false }
+              - { label: "Zdjęcie / Avatar", name: "avatar", widget: "image", required: false }
+              - { label: "Treść opinii", name: "content", widget: "text" }
+
+      # --- WERSJA ANGIELSKA: CALL TO ACTION ---
+      - name: "cta_en"
+        label: "Wezwanie do Działania / CTA (EN)"
+        file: "content/english/sections/call-to-action.md"
+        fields:
+          - { label: "Włączyć sekcję CTA?", name: "enable", widget: "boolean", default: true }
+          - { label: "Tytuł sekcji CTA", name: "title", widget: "string" }
+          - { label: "Treść / Opis", name: "content", widget: "text" }
+          - { label: "Zdjęcie", name: "image", widget: "image", required: false }
+          - label: "Przycisk"
+            name: "button"
+            widget: "object"
+            fields:
+              - { label: "Napis na przycisku", name: "label", widget: "string" }
+              - { label: "Link (URL)", name: "link", widget: "string" }
+              - { label: "Włączyć przycisk?", name: "enable", widget: "boolean", default: true }
+
+
+
+
+  # ==========================================
+  # KOLEKCJA: MENU NAWIGACYJNE (GÓRNA BELKA)
+  # ==========================================
+  # --- NAWIGACJA / MENU ---
+  - name: "navigation"
+    label: "Nawigacja (Menu)"
+    delete: false
+    files:
+      # --- WERSJA POLSKA ---
+      - name: "menu_pl"
+        label: "Menu Główne i Stopka (PL)"
+        file: "config/_default/menus.pl.toml"
+        fields:
+          - label: "Menu Główne (Górne)"
+            name: "main"
+            widget: "list"
+            summary: "{{fields.name}} (Rodzic: {{fields.parent}})"
+            fields:
+              - label: "Nazwa w menu"
+                name: "name"
+                widget: "string"
+              - label: "Adres URL"
+                name: "url"
+                widget: "string"
+                required: false
+                hint: "Zostaw puste dla kafelka 'Strony', który ma tylko rozwijać listę"
+              - label: "Kolejność (Weight)"
+                name: "weight"
+                widget: "number"
+                value_type: "int"
+              - label: "Menu nadrzędne (parent)"
+                name: "parent"
+                widget: "string"
+                required: false
+                hint: "Wpisz dokładnie nazwę głównej zakładki (np. 'Strony'), jeśli ten link ma być wewnątrz rozwijanego menu"
+
+          - label: "Menu w Stopce (Footer)"
+            name: "footer"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - label: "Nazwa w menu"
+                name: "name"
+                widget: "string"
+              - label: "Adres URL"
+                name: "url"
+                widget: "string"
+              - label: "Kolejność (Weight)"
+                name: "weight"
+                widget: "number"
+                value_type: "int"
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "menu_en"
+        label: "Menu Główne i Stopka (EN)"
+        file: "config/_default/menus.en.toml"
+        fields:
+          - label: "Main Menu (Top)"
+            name: "main"
+            widget: "list"
+            summary: "{{fields.name}} (Parent: {{fields.parent}})"
+            fields:
+              - label: "Link Name"
+                name: "name"
+                widget: "string"
+              - label: "URL Path"
+                name: "url"
+                widget: "string"
+                required: false
+              - label: "Order (Weight)"
+                name: "weight"
+                widget: "number"
+                value_type: "int"
+              - label: "Parent Menu"
+                name: "parent"
+                widget: "string"
+                required: false
+
+          - label: "Footer Menu"
+            name: "footer"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - label: "Link Name"
+                name: "name"
+                widget: "string"
+              - label: "URL Path"
+                name: "url"
+                widget: "string"
+              - label: "Order (Weight)"
+                name: "weight"
+                widget: "number"
+                value_type: "int"
+
+
+  # ==========================================
+  # KOLEKCJA: STRONY STAŁE (O MNIE)
+  # ==========================================
+  - name: "pages"
+    label: "Strony Stałe"
+    delete: false
+    files:
+      # --- WERSJA POLSKA ---
+      - name: "about_pl"
+        label: "O mnie (PL)"
+        file: "content/polish/about/_index.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string" }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text" }
+          - { label: "Zdjęcie główne", name: "image", widget: "image", required: false }
+          - { label: "Szablon (Layout)", name: "layout", widget: "hidden", default: "about" }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść strony", name: "body", widget: "markdown" }
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "about_en"
+        label: "O mnie (EN)"
+        file: "content/english/about/_index.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string" }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text" }
+          - { label: "Zdjęcie główne", name: "image", widget: "image", required: false }
+          - { label: "Szablon (Layout)", name: "layout", widget: "hidden", default: "about" }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść strony", name: "body", widget: "markdown" }
+
+      # --- WERSJA POLSKA ---
+      - name: "contact_pl"
+        label: "Kontakt (PL)"
+        file: "content/polish/contact/_index.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string" }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text" }
+          - { label: "Szablon (Layout)", name: "layout", widget: "hidden", default: "single" } # Wskazuje na layouts/contact/single.html
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść / Pojedyncza linijka wpisu", name: "body", widget: "markdown" }
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "contact_en"
+        label: "Kontakt (EN)"
+        file: "content/english/contact/_index.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string" }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text" }
+          - { label: "Szablon (Layout)", name: "layout", widget: "hidden", default: "single" } # Wskazuje na layouts/contact/single.html
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść / Pojedyncza linijka wpisu", name: "body", widget: "markdown" }
+
+      # --- WERSJA POLSKA ---
+      - name: "privacy_pl"
+        label: "Polityka Prywatności (PL)"
+        file: "content/polish/pages/privacy-policy.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "privacy_en"
+        label: "Privacy Policy (EN)"
+        file: "content/english/pages/privacy-policy.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
+
+
+
