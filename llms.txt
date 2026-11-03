@@ -21,7 +21,9 @@
 - [Pages](https://ewabloszyk.pl/pages/index.md)
 
 - [Elements](https://ewabloszyk.pl/elements/index.md): This is meta description
-- [Polityka Prywatności](https://ewabloszyk.pl/privacy-policy/index.md): This is meta description
+- [Polityka Prywatności](https://ewabloszyk.pl/polityka-prywatnosci/index.md): This is meta description
+- [Regulamin](https://ewabloszyk.pl/regulamin/index.md): This is meta description
+- [Regulamin Newslettera](https://ewabloszyk.pl/regulamin-newslettera/index.md): This is meta description
 
 ## Categories
 - [Categories](https://ewabloszyk.pl/categories/index.md)

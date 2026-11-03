@@ -353,7 +353,7 @@ collections:
       # --- WERSJA POLSKA ---
       - name: "privacy_pl"
         label: "Polityka Prywatności (PL)"
-        file: "content/polish/pages/privacy-policy.md"
+        file: "content/polish/pages/polityka-prywatnosci.md"
         fields:
           - { label: "Tytuł strony", name: "title", widget: "string" }
           - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
@@ -364,7 +364,51 @@ collections:
       # --- WERSJA ANGIELSKA ---
       - name: "privacy_en"
         label: "Privacy Policy (EN)"
-        file: "content/english/pages/privacy-policy.md"
+        file: "content/english/pages/polityka-prywatnosci.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
+      # --- WERSJA POLSKA ---
+      - name: "regulamin_pl"
+        label: "Regulamin (PL)"
+        file: "content/polish/pages/regulamin.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "regulamin_en"
+        label: "Regulamin (EN)"
+        file: "content/english/pages/regulamin.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
+      # --- WERSJA POLSKA ---
+      - name: "regulamin-newslettera_pl"
+        label: "Regulamin Newslettera (PL)"
+        file: "content/polish/pages/regulamin-newslettera.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "regulamin-newslettera_en"
+        label: "Regulamin Newslettera (EN)"
+        file: "content/english/pages/regulamin-newslettera.md"
         fields:
           - { label: "Tytuł strony", name: "title", widget: "string" }
           - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
