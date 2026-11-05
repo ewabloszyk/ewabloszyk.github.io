@@ -24,6 +24,7 @@
 - [Polityka Prywatności](https://ewabloszyk.pl/polityka-prywatnosci/index.md): This is meta description
 - [Regulamin](https://ewabloszyk.pl/regulamin/index.md): This is meta description
 - [Regulamin Newslettera](https://ewabloszyk.pl/regulamin-newslettera/index.md): This is meta description
+- [Trening Oddechu OnLine](https://ewabloszyk.pl/trening-oddechu/index.md): This is meta description
 
 ## Categories
 - [Categories](https://ewabloszyk.pl/categories/index.md)

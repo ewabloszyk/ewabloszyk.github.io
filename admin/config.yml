@@ -416,6 +416,28 @@ collections:
           - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
           - { label: "Treść polityki", name: "body", widget: "markdown" }
 
+      # --- WERSJA POLSKA ---
+      - name: "trening-oddechu_pl"
+        label: "Trening Oddechu (PL)"
+        file: "content/polish/pages/trening-oddechu.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
+      # --- WERSJA ANGIELSKA ---
+      - name: "trening-oddechu_en"
+        label: "Trening Oddechu (EN)"
+        file: "content/english/pages/trening-oddechu.md"
+        fields:
+          - { label: "Tytuł strony", name: "title", widget: "string" }
+          - { label: "Meta Tytuł (SEO)", name: "meta_title", widget: "string", required: false }
+          - { label: "Opis strony (SEO / Meta)", name: "description", widget: "text", required: false }
+          - { label: "Wersja robocza (Draft)", name: "draft", widget: "boolean", default: false }
+          - { label: "Treść polityki", name: "body", widget: "markdown" }
+
 
 
 
