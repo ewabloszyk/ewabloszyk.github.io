@@ -58,33 +58,13 @@ Dzięki indywidualnemu prowadzeniu uczysz się nie tylko, jakiećwiczenia wykony
 **[Zapisuję się na bezpłatną sesje treningu oddechu OnLine](https://preview.mailerlite.io/forms/881395/181541363213403286/share)**
 
 
-## Czego nauczysz się podczas trzech spotkań?
+#### **Podczas bezpłatnej sesji online dowiesz się** 
 
-
-**1. Rozpoznawać swój sposób oddychania**
-
-
-Dowiesz się, na jakie nawyki oddechowe warto zwracać uwagę ijakie znaczenie mogą mieć w Twoim codziennym funkcjonowaniu.
-
-
-**2. Wykorzystywać oddech do odprężenia**
-
-
-Poznasz praktyczne techniki oddechowe, z których będziesz mogłakorzystać w momentach napięcia i stresu.
-
-
-**3. Samodzielnie korzystać z poznanych ćwiczeń**
-
-
-Nauczysz się włączać je do zwykłych sytuacji, podczas pracy,między obowiązkami czy wtedy, kiedy potrzebujesz chwili spokoju.
-
-
-To umiejętności, które możesz rozwijać również pozakończeniu naszych spotkań.
-
-
-**[Zapisuję się na bezpłatną sesje treningu oddechu OnLine](https://preview.mailerlite.io/forms/881395/181541363213403286/share)**
-
-Poznane ćwiczenia możesz wykorzystywać w swoim codziennym rytmie, bez konieczności organizowania długich sesji treningowych.
+* dlaczego oddech przez nos ma znaczenie, oraz jaki wpływ na jakość życia ma oddech funkcjionalny. 
+* Rozpoznasz swój sposób oddychania
+* dowiesz się kiedy i jak samodzielnie ćwiczyć
+* dowiesz się jakie ćwiczenia oddechowe, które już znasz warto praktykować częściej, a jakie tylko od czasu do czasu.
+* dowiesz się jaki wływ ma oddech funkcjionalny na koncentrację
 
 
 ## Co zauważyły moje dotychczasowe klientki?
@@ -109,7 +89,7 @@ To indywidualne doświadczenia klientek. Rezultaty treningu mogą różnić się
 **[Zapisuję się na bezpłatną sesje treningu oddechu OnLine](https://preview.mailerlite.io/forms/881395/181541363213403286/share)**
 
 
-Zapraszam na jeden bezpłatny trening oddechu, podczas niego dowiesz się jak oddychasz, poznać ćwiczenia wspierający Twój dobrostan.
+Zapraszam na jeden bezpłatny trening oddechu OnLine
 
 Nasze spotkanie będzie jednorazowe, nie zobowiązuje ono do wykupienia kolejnego treningu oddechowego.
 
